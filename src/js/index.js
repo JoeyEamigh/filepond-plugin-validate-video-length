@@ -1,3 +1,5 @@
+import getBlobDuration from 'get-blob-duration';
+
 const plugin = ({ addFilter, utils }) => {
   // get quick reference to Type utils
   const { Type } = utils;
