@@ -51,6 +51,7 @@ const createBuild = options => {
   // return Rollup config
   return {
     input: 'src/js/index.js',
+    external: ['get-blob-duration'],
     treeshake: false,
     output: [
       {
