@@ -1,6 +1,6 @@
 {
   "name": "filepond-plugin-validate-video-length",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Video Length Validation Plugin for FilePond",
   "license": "MIT",
   "author": {
