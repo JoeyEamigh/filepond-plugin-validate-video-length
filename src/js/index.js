@@ -15,7 +15,6 @@ const plugin = ({ addFilter, utils }) => {
     'LOAD_FILE',
     (file, { query }) =>
       new Promise(async (resolve, reject) => {
-        // console.log(query('GET_ALLOW_VIDEO_LENGTH_VALIDATION'));
         if (!query('GET_ALLOW_VIDEO_LENGTH_VALIDATION')) {
           resolve(file);
           return;
@@ -59,7 +58,7 @@ const plugin = ({ addFilter, utils }) => {
   // expose plugin
   return {
     options: {
-      allowVideoLengthValidation: [true, Type.BOOLEAN],
+      allowVideoLengthValidation: [false, Type.BOOLEAN],
       maxVideoLength: [0, Type.NUMBER],
       minVideoLength: [0, Type.NUMBER],
     },
